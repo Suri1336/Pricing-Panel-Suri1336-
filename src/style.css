@@ -1,1 +1,94 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: rgb(254, 193, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "open Sans", sans-serif;
+}
+.panel {
+  background-color: rgb(255, 251, 245);
+  border-radius: 10px;
+  padding: 50px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pricing-plan {
+  border-bottom: 1px solid orange;
+  width: 50%;
+}
+.pricing-img {
+  margin-bottom: 25px;
+  width: 100%;
+}
+li {
+  border-bottom: 1px solid rgb(251, 222, 168);
+}
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.pricing-features {
+  margin: 50px 0 25px;
+  color: rgb(226, 139, 25);
+}
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid rgb(251, 222, 168);
+}
+.pricing-price {
+  color: orange;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+.pricing-button {
+  border: 1px solid rgb(247, 186, 74);
+  border-radius: 10px;
+  color: orange;
+  display: inline-block;
+  padding: 15px 35px;
+  margin: 25px 0;
+  transition: background-color 150ms ease-in-out;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: rgb(255, 213, 96);
+}
+.pricing-button.is-featured {
+  background-color: rgb(246, 193, 94);
+  color: white;
+}
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: rgb(253, 168, 10);
+  color: white;
+  transition: background-color 100ms ease-in-out;
+}
+@media (min-width: 800px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid orange;
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}

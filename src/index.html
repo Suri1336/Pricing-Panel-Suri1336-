@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +14,47 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="panel pricing-table ">
+      <!--first panel-->
+      <!-- <div class="panelCards"> -->
+      <div class="pricing-plan">
+        <img src="src/assets/imgs/icon1.png" class="pricing-img" />
+        <h2 class="pricing-header">Personal</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Custom Domains</li>
+          <li class="pricing-features-item">
+            Sleeps after 30mins of inactivity
+          </li>
+        </ul>
+        <span class="pricing-price">Free</span>
+        <a href="#/" class="pricing-button">Sign Up</a>
+      </div>
+      <!--second panel-->
+      <div class="pricing-plan">
+        <img src="src/assets/imgs/icon2.png" class="pricing-img" />
+        <h2 class="pricing-header">Small Team</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Never Sleeps</li>
+          <li class="pricing-features-item">
+            Multiple Workers For More Powerful Apps
+          </li>
+        </ul>
+        <span class="pricing-price">$250</span>
+        <a href="#/" class="pricing-button is-featured">Free Trial</a>
+      </div>
+      <!--third panel-->
+      <div class="pricing-plan">
+        <img src="src/assets/imgs/icon3.png" class="pricing-img" />
+        <h2 class="pricing-header">Enterprise</h2>
+
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Dedicated</li>
+          <li class="pricing-features-item">Simple horizontal Scalability</li>
+        </ul>
+        <span class="pricing-price">$400</span>
+        <a href="#/" class="pricing-button">Free Trial</a>
       </div>
     </div>
+    <!-- </div> -->
   </body>
 </html>
