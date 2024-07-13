@@ -67,7 +67,7 @@ li {
 }
 .pricing-button:hover,
 .pricing-button:focus {
-  background-color: rgb(255, 213, 96);
+  background-color: rgb(247, 186, 74);
 }
 .pricing-button.is-featured {
   background-color: rgb(246, 193, 94);
